@@ -1,0 +1,427 @@
+/* GERAL */
+
+body {
+	font-family: 'Titillium Web', "Lato", Helvetica, Arial, sans-serif;
+	color: #4d4d4d;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+.botao {
+	color: #f1f1f1;
+	text-decoration: none;
+	padding: 10px 30px;
+	background: #139f73;
+	font-size: .9em;
+	border-radius: 3px;
+}
+
+.botao:hover {
+	background: #f1f1f1;
+	color: #139f73;
+}
+
+.botao:active {
+	font-weight: bold;
+}
+
+/* NAVEGAÇÃO */
+
+/* webkit e ms usados para compatibilização entre os navegadores */
+nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	background-color: #000;
+}
+
+/* Nesse seletor o Nav irá acessar todos os links filhos */
+nav > a {
+	text-decoration: none;
+	color: #f1f1f1;
+	font-weight: 700;
+	font-size: 28px;
+	font-family: Pacifico, serif;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	width: 100%;
+}
+
+nav ul li {
+	text-align: center;
+	width: 100%;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+nav ul li a:hover {
+	color: #f3f3f3;
+	background: #139f73;
+	border-radius: 3px;
+}
+
+nav ul li a:active {
+	color: #139f73;
+	background: #fff;
+
+}
+
+/* CABEÇALHO */
+
+header {
+	background-image: url('../img/fundo.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #f1f1f1;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	padding: 20px;
+}
+
+header p {
+	margin-bottom: 2em;
+}
+
+/* SOBRE */
+
+#sobre {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	padding: 0 20px 20px;
+	background-color: #139f73;
+	color: #f1f1f1;
+}
+
+#sobre p {
+	margin: 2.5em;
+	max-width: 1000px;
+}
+
+#sobre .botao {
+	background: #f1f1f1;
+	color: #4d4d4d;
+}
+
+#sobre .botao:hover {
+	background: #139f73;
+	color: #f1f1f1;
+	border: 1px solid #fff;
+}
+
+/* SERVIÇOS */
+
+#servicos {
+	padding: 20px;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	 -webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+}
+
+#servicos div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	padding-top: 30px;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	padding-top: 20px;
+}
+
+#portfolio h2 {
+	margin-bottom: 20px;
+}
+
+#portfolio img {
+	width: 100%;
+}
+
+/* CONTATO */
+
+#contato {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	padding: 20px;
+}
+
+#contato p a {
+	text-decoration: none;
+	background: #139f73;
+	color: #fff;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+#contato p a:hover {
+	background: #fff;
+	color: #4d4d4d;
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #139f73;
+}
+
+#contato p a:active {
+	background: #fff;
+	color: #139f73;
+
+}
+
+/* FOOTER */
+
+footer {
+	text-align: center;
+	padding: 10px;
+	background: #000;
+	color: #f1f1f1;
+}
+
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* MEDIA QUERIES */
+
+/* Tamanho ideal para Tablets 768px */
+@media screen and (min-width: 768px) {
+
+	/* NAVEGAÇÃO */
+	nav {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+	}
+
+	nav ul {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+
+		width: 70%;
+	}
+
+	/* CABEÇALHO */
+
+	/* vh - view port height é toda a área interna do navegador, a altura do elemento seja de 60% altura do viewport, ainda assim não é utilizada por todos os navegadores, necessário também usar uma medida padrão como o 600px.*/
+	header {
+		height: 600px;
+		height: 60vh;
+
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+
+	}
+
+	/* SOBRE */
+	#sobre {
+		height: 250px;
+		height: 30vh;
+
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+
+		min-height: 250px;
+		padding: 10px 20px 20px;
+	}
+
+	/* SERVIÇOS */
+
+	#servicos {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: flex-start;
+
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	#servicos h2 {
+		text-align: center;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+
+	#servicos div {
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+
+		-ms-flex-preferred-size: 150px;
+		flex-basis: 150px;
+
+		padding: 0 10px;
+	}
+
+	/* PORTFOLIO */
+
+	#portfolio {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	#portfolio h2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	#portfolio img {
+		width: 33.3333333333%;
+	}
+
+	/* CONTATO */
+
+	#contato {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: space-around;
+
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	#contato h2,
+	#contato p {
+		width: 100%;
+	}
+
+}
